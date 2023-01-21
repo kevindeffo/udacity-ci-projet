@@ -7,7 +7,7 @@ orbs:
 
 jobs:
   build:
-    dockers:
+    docker:
       - circleci/node:13.8.0
     steps:
       - checkout
@@ -16,7 +16,7 @@ jobs:
 
 
   test:
-    dockers:
+    docker:
       - circleci/node:13.8.0
     
     steps:
@@ -24,7 +24,7 @@ jobs:
       - run: test
 
   analyse:
-    dockers:
+    docker:
       - circleci/node:13.8.0
     steps:
       - checkout
