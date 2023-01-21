@@ -8,8 +8,8 @@ jobs:
       - image: circleci/node:13.8.0
     steps:
       - checkout
-      - run: setup
-      - run: build 
+      - run: npm run setup
+      - run: npm run build 
 
 
   test:
